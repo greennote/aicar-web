@@ -572,7 +572,7 @@
                 <h1 id="_1">事例集<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>このページはALGYANオリジナルJetbotで試せる事例集です。</p>
 <blockquote>
-<p><a href="software-setup">ソフトウェアのセットアップ</a>を確実に完了しておいてください。</p>
+<p><a href="../Software-Setup/">ソフトウェアのセットアップ</a>を確実に完了しておいてください。</p>
 </blockquote>
 <h2 id="example-1-">Example 1 - 基本動作<a class="headerlink" href="#example-1-" title="Permanent link">&para;</a></h2>
 <p>ウェブブラウザ経由でJetbotをコントロールします。</p>
@@ -581,7 +581,7 @@
 <li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
 <li>デフォルトのパスワード <strong>jetbot</strong> でログインする</li>
 <li><code>~/Notebooks/basic_motion/</code> に移動</li>
-<li><a href="../../jetbot/blob/master/notebooks/basic_motion/basic_motion.ipynb"><strong>basic_motion.ipynb</strong></a> ノートブックを開き、指示に従って操作する
+<li><strong>basic_motion.ipynb</strong> ノートブックを開き、指示に従って操作する
     &gt; Jetbotが実際に動きます。十分なスペースを確保してください。</li>
 </ol>
 <h2 id="example-2-">Example 2 - 遠隔操作<a class="headerlink" href="#example-2-" title="Permanent link">&para;</a></h2>
@@ -599,7 +599,7 @@
 </li>
 <li>Shutdown all other running notebooks by selecting <code>Kernel</code> -&gt; <code>Shutdown All Kernels...</code></li>
 <li>Navigate to <code>~/Notebooks/teleoperation/</code></li>
-<li>Open and follow the <a href="../../jetbot/blob/master/notebooks/teleoperation/teleoperation.ipynb"><code>teleoperation.ipynb</code></a> notebook</li>
+<li>Open <strong>teleoperation.ipynb</strong> notebook</li>
 </ol>
 <h2 id="example-3-">Example 3 - 衝突回避<a class="headerlink" href="#example-3-" title="Permanent link">&para;</a></h2>
 <p>この事例ではJetbotを安全に走らせるために必要な<em>イメージ分類</em>データセットを収集します。Jetbotに<code>free（障害物なし）</code> and <code>blocked（障害物あり）</code> の2つのシナリオを教えます。このAI分類器を使い、Jetbotが危険な領域に侵入するのを防ぎます。</p>
@@ -632,11 +632,12 @@
 <h4 id="2-gpupc">選択肢その2 - 他のGPU付きPC上での学習<a class="headerlink" href="#2-gpupc" title="Permanent link">&para;</a></h4>
 <ol>
 <li>PyTorchがインストールされており、Juputer Labサーバーが動作しているGPU付きPCに接続する</li>
-<li>衝突回避 <a href="../../jetbot/blob/master/notebooks/collision_avoidance/train_model.ipynb">学習用ノートブック</a> をこのマシンにアップロードする</li>
+<li>衝突回避 学習用ノートブックをこのマシンにアップロードする</li>
 <li><strong>train_model.ipynb</strong> ノートブックを開き、指示に従って操作する</li>
 </ol>
 <h3 id="step-3-jetbot">Step 3 - JetBot上で実行<a class="headerlink" href="#step-3-jetbot" title="Permanent link">&para;</a></h3>
-<p><a href="../../images/JL03c_Live-demo.png"><img src="../../images/JL03c_Live-demo.png" height="320"></a></p>
+<!-- <a href="../../images/JL03c_Live-demo.png"><img src="../../images/JL03c_Live-demo.png" height="320"></a> -->
+
 <ol>
 <li>Jetbotをバッテリーに接続し、起動する</li>
 <li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
