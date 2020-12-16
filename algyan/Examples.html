@@ -1,0 +1,746 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>事例集 - AI自動運転カー学習キット</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/version-select.css">
+    
+      <link rel="stylesheet" href="../css/colors.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="greennote" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="AI自動運転カー学習キット" class="md-header-nav__button md-logo" aria-label="AI自動運転カー学習キット">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            AI自動運転カー学習キット
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              事例集
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/greennote-inc/aicar-web-source/" title="リポジトリへ" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../index.html" class="md-tabs__link">
+        AI自動運転カー学習キットとは
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../greennote/Home.html" class="md-tabs__link">
+        Greennote AI自動運転カー学習キット（フルセット版）
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="Home.html" class="md-tabs__link">
+        ALGYAN Jetbot AI学習キット
+      </a>
+    </li>
+  
+
+      
+        
+  <li class="md-tabs__item">
+    <a href="https://www.i-gnote.com" class="md-tabs__link">
+      グリーンノート公式ウェブサイト
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="AI自動運転カー学習キット" class="md-nav__button md-logo" aria-label="AI自動運転カー学習キット">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    AI自動運転カー学習キット
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/greennote-inc/aicar-web-source/" title="リポジトリへ" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
+    <label class="md-nav__link" for="nav-1">
+      AI自動運転カー学習キットとは
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="AI自動運転カー学習キットとは" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        AI自動運転カー学習キットとは
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      はじめに
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../greennote/Home.html" class="md-nav__link">
+      Greennote AI自動運転カー学習キット（フルセット版）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Home.html" class="md-nav__link">
+      ALGYAN Jetbot AI学習キット
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://www.i-gnote.com" class="md-nav__link">
+      グリーンノート公式ウェブサイト
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Greennote AI自動運転カー学習キット（フルセット版）
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Greennote AI自動運転カー学習キット（フルセット版）" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Greennote AI自動運転カー学習キット（フルセット版）
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../greennote/Home.html" class="md-nav__link">
+      はじめに
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../greennote/Software-Setup-1.html" class="md-nav__link">
+      ソフトウェア設定 前半戦
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      ALGYAN Jetbot AI学習キット
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="ALGYAN Jetbot AI学習キット" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        ALGYAN Jetbot AI学習キット
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Home.html" class="md-nav__link">
+      はじめに
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://jetbot.algyan.biz" class="md-nav__link">
+      購入方法
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Hardware-Setup.html" class="md-nav__link">
+      組み立て方法
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Software-Setup.html" class="md-nav__link">
+      ソフトウェア設定方法
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="TroubleShoot.html" class="md-nav__link">
+      トラブルシューティング
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://www.i-gnote.com" class="md-nav__link">
+      グリーンノート公式ウェブサイト
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-1-" class="md-nav__link">
+    Example 1 - 基本動作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2-" class="md-nav__link">
+    Example 2 - 遠隔操作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3-" class="md-nav__link">
+    Example 3 - 衝突回避
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3 - 衝突回避">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-jetbot" class="md-nav__link">
+    Step 1 - Jetbotでデータを集める
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-" class="md-nav__link">
+    Step 2 - ニューラルネットワークの学習
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - ニューラルネットワークの学習">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-jetson-nano" class="md-nav__link">
+    選択肢その1 - Jetson nano上での学習
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-gpupc" class="md-nav__link">
+    選択肢その2 - 他のGPU付きPC上での学習
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-jetbot" class="md-nav__link">
+    Step 3 - JetBot上で実行
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-4-" class="md-nav__link">
+    Example 4 - 物体追従
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    次に
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/greennote-inc/aicar-web-source/blob/master/docs/algyan/Examples.md" title="編集" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">事例集<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>このページはALGYANオリジナルJetbotで試せる事例集です。</p>
+<blockquote>
+<p><a href="Software-Setup.html">ソフトウェアのセットアップ</a>を確実に完了しておいてください。</p>
+</blockquote>
+<h2 id="example-1-">Example 1 - 基本動作<a class="headerlink" href="#example-1-" title="Permanent link">&para;</a></h2>
+<p>ウェブブラウザ経由でJetbotをコントロールします。</p>
+<p><a href="../../images/JL01_Basic-Motion.png"><img src="../../images/JL01_Basic-Motion.png" height="320"></a></p>
+<ol>
+<li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
+<li>デフォルトのパスワード <strong>jetbot</strong> でログインする</li>
+<li><code>~/Notebooks/basic_motion/</code> に移動</li>
+<li><strong>basic_motion.ipynb</strong> ノートブックを開き、指示に従って操作する
+    &gt; Jetbotが実際に動きます。十分なスペースを確保してください。</li>
+</ol>
+<h2 id="example-2-">Example 2 - 遠隔操作<a class="headerlink" href="#example-2-" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>この項目を試すにはゲームコントローラーが必要です。キットには付属しておりませんので、ここでは原文を示すに留めます。実施したい場合は利用者側でご準備ください。</p>
+</blockquote>
+<p>In this example we'll drive JetBot remotely, view live streaming video, and save snapshots!</p>
+<p><a href="../../images/JL02_Teleoperation.png"><img src="../../images/JL02_Teleoperation.png" height="320"></a></p>
+<ol>
+<li>
+<p>Connect to your robot by navigating to <code>http://&lt;jetbot_ip_address&gt;:8888</code></p>
+</li>
+<li>
+<p>Sign in with the default password <code>jetbot</code></p>
+</li>
+<li>Shutdown all other running notebooks by selecting <code>Kernel</code> -&gt; <code>Shutdown All Kernels...</code></li>
+<li>Navigate to <code>~/Notebooks/teleoperation/</code></li>
+<li>Open <strong>teleoperation.ipynb</strong> notebook</li>
+</ol>
+<h2 id="example-3-">Example 3 - 衝突回避<a class="headerlink" href="#example-3-" title="Permanent link">&para;</a></h2>
+<p>この事例ではJetbotを安全に走らせるために必要な<em>イメージ分類</em>データセットを収集します。Jetbotに<code>free（障害物なし）</code> and <code>blocked（障害物あり）</code> の2つのシナリオを教えます。このAI分類器を使い、Jetbotが危険な領域に侵入するのを防ぎます。</p>
+<h3 id="step-1-jetbot">Step 1 - Jetbotでデータを集める<a class="headerlink" href="#step-1-jetbot" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>NVIDIAから <a href="https://drive.google.com/open?id=1UsRax8bR3R-e-0-80KfH2zAt-IyRPtnW">訓練済モデル</a> が提供されています。これを使うことでステップ1、2を省略してステップ3に進むことができます。このモデルは広角レンズを装着したRaspberry Pi V2カメラによって収集された限定的なデータセットを用いて学習されています。本キットではRaspberry Pi V2カメラと同じ画角のUSBカメラを使っており、このモデルをそのまま使用することができます。カメラ位置によって認識精度に影響がありますので、いろいろ試してみてください。</p>
+</blockquote>
+<p><a href="../../images/JL03a_Data-Collection.png"><img src="../../images/JL03a_Data-Collection.png" height="320"></a></p>
+<ol>
+<li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
+<li>デフォルトのパスワード <strong>jetbot</strong> でログインする</li>
+<li>メニューから <strong>Kernel</strong> -&gt; <strong>Shutdown All Kernels...</strong> を選択し、動作中のカーネルを全て終了する</li>
+<li><strong>~/Notebooks/collision_avoidance/</strong> に移動する</li>
+<li><strong>data_collection.ipynb</strong> ノートブックを開き、指示に従って操作する</li>
+</ol>
+<h3 id="step-2-">Step 2 - ニューラルネットワークの学習<a class="headerlink" href="#step-2-" title="Permanent link">&para;</a></h3>
+<p><a href="../../images/JL03b_Training.png"><img src="../../images/JL03b_Training.png" height="320"></a></p>
+<h4 id="1-jetson-nano">選択肢その1 - Jetson nano上での学習<a class="headerlink" href="#1-jetson-nano" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>本キットには5V AC電源アダプタは付属していません。必要に応じて利用者側で準備してください。</p>
+</blockquote>
+<ol>
+<li>Jetbotをシャットダウンし、バッテリーに繋がっている電源ケーブルを取り外す</li>
+<li>5V AC電源アダプタを接続し、Jetbotを起動する</li>
+<li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
+<li>デフォルトのパスワード <strong>jetbot</strong> でログインする</li>
+<li><strong>~/collision_avoidance</strong> に移動する</li>
+<li><strong>train_model.ipynb</strong> ノートブックを開き、指示に従って操作する</li>
+</ol>
+<h4 id="2-gpupc">選択肢その2 - 他のGPU付きPC上での学習<a class="headerlink" href="#2-gpupc" title="Permanent link">&para;</a></h4>
+<ol>
+<li>PyTorchがインストールされており、Juputer Labサーバーが動作しているGPU付きPCに接続する</li>
+<li>衝突回避 学習用ノートブックをこのマシンにアップロードする</li>
+<li><strong>train_model.ipynb</strong> ノートブックを開き、指示に従って操作する</li>
+</ol>
+<h3 id="step-3-jetbot">Step 3 - JetBot上で実行<a class="headerlink" href="#step-3-jetbot" title="Permanent link">&para;</a></h3>
+<!-- <a href="../../images/JL03c_Live-demo.png"><img src="../../images/JL03c_Live-demo.png" height="320"></a> -->
+
+<ol>
+<li>Jetbotをバッテリーに接続し、起動する</li>
+<li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
+<li>デフォルトのパスワード <strong>jetbot</strong> でログインする</li>
+<li>メニューから <strong>Kernel</strong> -&gt; <strong>Shutdown All Kernels...</strong> を選択し、動作中のカーネルを全て終了する</li>
+<li><strong>~/Notebooks/collision_avoidance</strong> に移動する</li>
+<li><strong>live_demo.ipynb</strong> ノートブックを開き、指示に従って操作する
+    &gt; Jetbotの周辺に十分な動作スペースを確保し、慎重に作業を進めてください。</li>
+</ol>
+<h2 id="example-4-">Example 4 - 物体追従<a class="headerlink" href="#example-4-" title="Permanent link">&para;</a></h2>
+<p>この事例では <strong>人</strong> 、<strong>カップ</strong> 、<strong>イヌ</strong> などを検出することができる学習済モデルを利用し、Jetbotにこれらの物体を追跡させます。これを実行している間、Jetbotは上記の衝突回避を同時に実行し、、自らの安全を保っています。</p>
+<p><a href="../../images/JL04_Object-Following.png"><img src="../../images/JL04_Object-Following.png" height="320"></a></p>
+<ol>
+<li>ウェブブラウザから <code>http://&lt;自分で設定したホスト名&gt;.local:8888</code> に接続する</li>
+<li>デフォルトのパスワード <strong>jetbot</strong> でログインする</li>
+<li>メニューから <strong>Kernel</strong> -&gt; <strong>Shutdown All Kernels...</strong> を選択し、動作中のカーネルを全て終了する</li>
+<li><strong>~/Notebooks/object_following</strong> に移動する</li>
+<li>学習済モデル <a href="https://drive.google.com/open?id=1RnNBHPDphIOWwHCSfeMCWQ7XN3w3tKFD">ssd_mobilenet_v2_coco.engine</a> をこのフォルダにアップロードする
+    &gt; Example 3で利用した衝突回避モデルが <strong>~/Notebooks/collision_avoidance</strong>　に置かれていることも確認してください</li>
+<li><strong>live_demo.ipynb</strong> ノートブックを開き、指示に従って操作する
+    &gt; Jetbotの周辺に十分な動作スペースを確保し、慎重に作業を進めてください。</li>
+</ol>
+<h2 id="_2">次に<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Jetbotをもっと賢くしましょう。</p>
+<ul>
+<li>衝突回避用のデータをもっとたくさん集める</li>
+<li>他のニューラルネットワークアーキテクチャを試してみる ( <a href="https://pytorch.org/docs/stable/torchvision/models.html">torchvision</a> に多くの事例があります！)</li>
+<li>衝突回避を利用して別のタスクを実行する（例えば <strong>ネコがいる</strong> / <strong>ネコがいない</strong> を見分け、<strong>ネコがいる</strong> 場合は <strong>駆け出す</strong> など）</li>
+</ul>
+<p>まったく新しい何かを造り出しましょう！</p>
+<ul>
+<li>衝突回避を利用して新しいプロジェクトを立ち上げる</li>
+<li>Jetbotに新しいハードウェアを付け加えることに挑戦してみる（Jetson GPIOや<a href="https://blog.adafruit.com/2019/03/18/adafruit-blinka-support-for-the-nvidia-jetson-series-nvidia-gtc19-nvidiaembedded/">Adafruit Blinka</a> を利用すると簡単です）</li>
+<li>Modify the collision avoidance example for your own project</li>
+<li>Try out some new hardware with Jetson Nano.  It's easy with Jetson GPIO and <a href="https://blog.adafruit.com/2019/03/18/adafruit-blinka-support-for-the-nvidia-jetson-series-nvidia-gtc19-nvidiaembedded/">Adafruit Blinka</a></li>
+</ul>
+<p>そしてそれらを共有しましょう。</p>
+<ul>
+<li><a href="https://devtalk.nvidia.com/default/board/372/jetson-projects/">NVIDIA Developer Forums</a></li>
+<li><a href="https://algyan.connpass.com">IoT ALGYAN</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.expand', 'navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../js/version-select.js"></script>
+      
+    
+  </body>
+</html>
